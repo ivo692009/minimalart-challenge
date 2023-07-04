@@ -48,6 +48,10 @@ Cypress.Commands.add('ValidarMes', () => {
 Cypress.Commands.add('ValidarDiaDeLaMarmota', () => { 
 //Esta funcion YA posicionado en febrero, valida que no existe la nota, y si no existe se crea la nota
 
+    //Primero validamos que estemos en febrero
+    cy.ValidarMes()
+
+    //Despues hacemos una validacion con respecto a si existe una nota
     cy.contarElementosDiv().then((cantidadElementos) => {
         //Se setea la variable para poder validar la cantidad de divs
         cy.wrap(cantidadElementos).as('cantidadDiv');
@@ -80,8 +84,10 @@ Cypress.Commands.add('ValidarDiaDeLaMarmota', () => {
 Cypress.Commands.add('BorrarDiaDeLaMarmota', () => { 
     //Esta funcion borra la nota que dice "Dia de la Marmota"
     //Solo funciona si existe la nota previamente
-    //Primero se busca que exista una nota que diga "Dia de la Marmota"
+    //Primero validamos que estemos en febrero
+    cy.ValidarMes()
 
+    //Despues hacemos una validacion con respecto a si existe una nota
     cy.contarElementosDiv().then((cantidadElementos) => {
         //seteamos la variable con la cantidad de divs encontradas
         cy.wrap(cantidadElementos).as('cantidadDiv');
