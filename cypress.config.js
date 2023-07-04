@@ -8,8 +8,8 @@ module.exports = defineConfig({
   
   },
   e2e: {
-    URL:"http://google.com",
-    setupNodeEvents(on, config){
+    e2e: {
+      testIsolation: false,
     },
   },
 });
