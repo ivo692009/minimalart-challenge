@@ -46,3 +46,6 @@ Cada desarrollador debera crear un repositorio en su cuenta de github y subir el
 Dejandolo público para que luego alguien del equipo lo pueda analizar como corresponda.
 
 (PD: Se puede cambiar el Remote del repositorio si sabe usar `git` correctamente)
+
+PARA CREAR UN REPORTE correr el siguiente comando
+cypress run --reporter mochawesome

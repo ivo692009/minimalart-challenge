@@ -4,7 +4,12 @@
   "description": "Cypress app to test the challenge",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "cypress:run": "cypress run",
+    "test": "cypress run --spec \"**/*.feature\"",
+    "eject": "react-scripts eject"
   },
   "keywords": [
     "Cypress",
@@ -13,8 +18,15 @@
   "author": "JP",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/mocha-teamcity-reporter": "^1.0.0",
     "cypress": "^12.0.0",
     "cypress-wait-until": "^1.7.2",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.3",
+    "path": "^0.12.7"
   }
 }

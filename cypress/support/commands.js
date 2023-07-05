@@ -24,8 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-
-
 Cypress.Commands.add('ValidarMes', () => { 
     //Esta funcion recorre todos los meses hasta llegar a Febrero
     //Como Cypress no permite bucles por defecto decidi optar por una recurrencia simple
@@ -131,3 +129,4 @@ Cypress.Commands.add('BorrarDiaDeLaMarmota', () => {
         return cantidadElementosDiv; // Devuelve la cantidad numérica
       });
   });
+
