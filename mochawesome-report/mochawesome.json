@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2023-07-05T02:39:31.441Z",
-    "end": "2023-07-05T02:39:38.011Z",
-    "duration": 6570,
+    "start": "2023-07-05T17:43:20.810Z",
+    "end": "2023-07-05T17:43:27.163Z",
+    "duration": 6353,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "85a8a879-2816-48b5-9ebd-a3b3ba0dafb8",
+      "uuid": "3200ec9f-8cc5-4f35-a719-c5ca746cf80d",
       "title": "",
       "fullFile": "cypress\\e2e\\all\\Calendario.cy.js",
       "file": "cypress\\e2e\\all\\Calendario.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8c9ecf6f-a8a9-4f53-8b09-1a716c33b6c0",
+          "uuid": "eeed5eb5-8d0c-4fa9-b4ac-7adf92ba8608",
           "title": "Conjunto de Test de Calendario",
           "fullFile": "",
           "file": "",
@@ -35,10 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Llegar hasta febrero",
-              "fullTitle": "Conjunto de Test de Calendario Llegar hasta febrero",
+              "title": "[@commandexpres]Llegar hasta febrero",
+              "fullTitle": "Conjunto de Test de Calendario [@commandexpres]Llegar hasta febrero",
               "timedOut": null,
-              "duration": 2646,
+              "duration": 2447,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,16 +47,16 @@
               "context": null,
               "code": "//Esta funcion recorre todos los meses hasta llegar a febrero estes donde estes\ncy.ValidarMes();",
               "err": {},
-              "uuid": "24ffbfc6-797d-4731-a428-7a1d571c3592",
-              "parentUUID": "8c9ecf6f-a8a9-4f53-8b09-1a716c33b6c0",
+              "uuid": "2b48f5f6-56d7-45fe-8f1d-2d6a92bf2007",
+              "parentUUID": "eeed5eb5-8d0c-4fa9-b4ac-7adf92ba8608",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Crear Nota Dia de la Marmota",
-              "fullTitle": "Conjunto de Test de Calendario Crear Nota Dia de la Marmota",
+              "title": "[@commandexpres]Crear Nota Dia de la Marmota",
+              "fullTitle": "Conjunto de Test de Calendario [@commandexpres]Crear Nota Dia de la Marmota",
               "timedOut": null,
-              "duration": 907,
+              "duration": 888,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,16 +65,16 @@
               "context": null,
               "code": "//Esta funcion agrega la nota \"El Dia de la Marmota\" el dia 2 de febrero\ncy.ValidarDiaDeLaMarmota();",
               "err": {},
-              "uuid": "645ca18f-bf58-450d-84be-a9756f4a28b0",
-              "parentUUID": "8c9ecf6f-a8a9-4f53-8b09-1a716c33b6c0",
+              "uuid": "e202c267-73a0-4c71-87a8-280df53f3ed5",
+              "parentUUID": "eeed5eb5-8d0c-4fa9-b4ac-7adf92ba8608",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Borrar Nota Dia de la Marmota",
-              "fullTitle": "Conjunto de Test de Calendario Borrar Nota Dia de la Marmota",
+              "title": "[@borrardia] Borrar Nota Dia de la Marmota",
+              "fullTitle": "Conjunto de Test de Calendario [@borrardia] Borrar Nota Dia de la Marmota",
               "timedOut": null,
-              "duration": 578,
+              "duration": 563,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "//Esta funcion borra la nota previamente creada en el dia de 2 de febrero\ncy.BorrarDiaDeLaMarmota();",
               "err": {},
-              "uuid": "333d8cfb-65bc-4180-8c58-86a7e97355df",
-              "parentUUID": "8c9ecf6f-a8a9-4f53-8b09-1a716c33b6c0",
+              "uuid": "282a6b2f-fd97-4d82-a1b9-c03c7f5bc534",
+              "parentUUID": "eeed5eb5-8d0c-4fa9-b4ac-7adf92ba8608",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "24ffbfc6-797d-4731-a428-7a1d571c3592",
-            "645ca18f-bf58-450d-84be-a9756f4a28b0",
-            "333d8cfb-65bc-4180-8c58-86a7e97355df"
+            "2b48f5f6-56d7-45fe-8f1d-2d6a92bf2007",
+            "e202c267-73a0-4c71-87a8-280df53f3ed5",
+            "282a6b2f-fd97-4d82-a1b9-c03c7f5bc534"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4131,
+          "duration": 3898,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
