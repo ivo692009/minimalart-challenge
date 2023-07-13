@@ -6,8 +6,12 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:run-calendario": "cypress run --spec 'cypress/e2e/all/Calendario.cy.js'",
-    "cypress:commandexpres": "cypress run --tag 'commandexpres'"
+    "cypress:run-ayb": "npx cypress run --spec 'cypress/e2e/all/[AB]*.cy.js'",
+    "Comentario run-ayb": "Ejecuta las pruebas A y B de manera secuencial",
+    "cypress:run-c": "npx cypress run --spec 'cypress/e2e/all/C-calendario.cy.js'",
+    "comentario run-c": "Ejecuta solo la prueba C que borra la nota",
+    "cypress:reporter": "cypress run && npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json && npx marge mochawesome.json && rm cypress/results/*.json && rm mochawesome.json",
+    "comentario:reporter": "Genera un reporte por cada suit de pruebas existente, mergea los archivos json y crea el reporte dentro de la carpeta 'mochawesome-reporter'"
   },
   "keywords": [
     "Cypress",
@@ -18,12 +22,17 @@
   "devDependencies": {
     "@cypress/mocha-teamcity-reporter": "^1.0.0",
     "cypress": "^12.0.0",
+    "cypress-multi-reporters": "^1.6.3",
     "cypress-wait-until": "^1.7.2",
     "cypress-xpath": "^2.0.1",
     "mocha-junit-reporter": "^2.2.0",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
-    "nodemailer": "^6.9.3"
+    "nodemailer": "^6.9.3",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "puppeteer": "^20.8.1"
   }
 }

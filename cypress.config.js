@@ -2,15 +2,15 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   reporter: 'mochawesome',
-  projectId: "hyexer",
-  chromeWebSecurity: false,
-  env: {
-    URL:"http://google.com",
-  
+  reporterOptions: {
+    reportDir: 'cypress/results',
+    overwrite: false,
+    html: false,
+    json: true,
   },
+  projectId: '71oma6',
+  chromeWebSecurity: false,
   e2e: {
-    e2e: {
       testIsolation: false,
-    },
   },
 });
